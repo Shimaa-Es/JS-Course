@@ -114,11 +114,13 @@
 let zero = 0;
 let counter = 3;
 let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
-// my.length =[4];
+// my.length =[++counter];
 // console.log(my.reverse()); // 1
 // console.log(my.slice(++zero,(counter)).reverse()); // 2
 // console.log(`El${my[++zero].slice(--counter)}`); // 3
-// console.log(my[++zero][++counter]+my[--counter][--zero]); // 4
+console.log(my[++zero][++counter]+my[--counter][--zero]); // 4
 
+// Array method Challenge End
 
+// For Loop Challenge Start
  
