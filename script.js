@@ -125,7 +125,6 @@
 // For Loop Challenge Start
 let myAdmins = ["Ahmed", "Osama", "Sayed", "stop", "Samera"];
 let myEmployees = ["Amged", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia"];
-let counter=0;
 document.write(`<div>We Have ${myAdmins.indexOf("stop")} Admins</div>`);
 document.write(`<hr></hr>`);
 for(i=0;i<myAdmins.length;i++){
@@ -133,13 +132,17 @@ for(i=0;i<myAdmins.length;i++){
         break;
     document.write(`<div>The Admin For Team ${(i+1)+ myAdmins[i]} </div>`)
     document.write(`<h3>Team Members: </h3>`)
+    document.write(`<div>`)
+    let counter=0;
     for(j=0;j<myEmployees.length;j++){
         if(myAdmins[i][0]===myEmployees[j][0]){
-            document.write(`<p>- ${(counter++)}`);
+            document.write(`<p>`)
+            document.write(`- ${(++counter)}`)
             document.write(` ${myEmployees[j]}</p>`);
         }
         
     }
     document.write(`<hr></hr>`);
+    document.write(`</div>`)
 }
  
