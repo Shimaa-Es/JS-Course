@@ -169,17 +169,7 @@
 
 // Start Fuction- Random Argument Challenge
 
-function showDetailes(a, b, c){
-    let userName, Age, Status;
-typeof a==="string"?userName=a:typeof b==="string"?userName=b:userName=c;
-typeof a==="number"?Age=a:typeof b=="number"?Age=b:Age=c;
-typeof a=="boolean"?Status=a:typeof b=="boolean"?Status=b:Status=c;
-    document.write(`<div>`);
-    document.write(`<p>`);
-    document.write(`Welcome,${userName}, `);
-    document.write(`Your Age Is${Age}, `);
-    Status===true?document.write(`You Are Availaple To Work${Status}`):document.write(`You Are not Availaple To Work${Status}`);
-    document.write(`</p>`);
-    document.write(`</div>`);
-}
-showDetailes(25,"Shimaa",false);
+// End Fuction- Random Argument Challenge
+
+//  Start Arrow Function Challenge
+//  End Arrow Function Challenge
