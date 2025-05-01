@@ -123,26 +123,63 @@
 // Array method Challenge End
 
 // For Loop Challenge Start
-let myAdmins = ["Ahmed", "Osama", "Sayed", "stop", "Samera"];
-let myEmployees = ["Amged", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia"];
-document.write(`<div>We Have ${myAdmins.indexOf("stop")} Admins</div>`);
-document.write(`<hr></hr>`);
-for(i=0;i<myAdmins.length;i++){
-    if(i===myAdmins.indexOf("stop")) 
-        break;
-    document.write(`<div>The Admin For Team ${(i+1)+ myAdmins[i]} </div>`)
-    document.write(`<h3>Team Members: </h3>`)
-    document.write(`<div>`)
-    let counter=0;
-    for(j=0;j<myEmployees.length;j++){
-        if(myAdmins[i][0]===myEmployees[j][0]){
-            document.write(`<p>`)
-            document.write(`- ${(++counter)}`)
-            document.write(` ${myEmployees[j]}</p>`);
-        }
+// let myAdmins = ["Ahmed", "Osama", "Sayed", "stop", "Samera"];
+// let myEmployees = ["Amged", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia"];
+// document.write(`<div>We Have ${myAdmins.indexOf("stop")} Admins</div>`);
+// document.write(`<hr></hr>`);
+// for(i=0;i<myAdmins.length;i++){
+//     if(i===myAdmins.indexOf("stop")) 
+//         break;
+//     document.write(`<div>The Admin For Team ${(i+1)+ myAdmins[i]} </div>`)
+//     document.write(`<h3>Team Members: </h3>`)
+//     document.write(`<div>`)
+    
+//     let counter=0;
+//     for(j=0;j<myEmployees.length;j++){
+//         if(myAdmins[i][0]===myEmployees[j][0]){
+//             document.write(`<p>`)
+//             document.write(`- ${(++counter)}`)
+//             document.write(` ${myEmployees[j]}</p>`);
+//         }
         
-    }
-    document.write(`<hr></hr>`);
-    document.write(`</div>`)
+//     }
+//     document.write(`<hr></hr>`);
+//     document.write(`</div>`)
+// }
+
+// Function Advanced Practiceo 
+// function showInfo(us = "Un", ag = "Un" ,rt = 0 ,show ="yes",  ...sk){
+//     document.write(`<div>`);
+//     document.write(`<h2>Welcome, ${us}</h2>`);
+//     document.write(`<p>Age: ${ag}</p>`);
+//     document.write(`<p>Hour Rate: $${rt}</p>`);
+//     if (show==="yes") {
+//         if (sk.length>0){
+//             document.write(`<p>Skills: ${sk.join(" | ")}</p>`);
+//         }else{
+//             document.write(`<p>Skills:No Skills </p>`);
+//         }
+//     }else{
+//     document.write(`<p>Skills Is Hidden</p>`);
+//     }
+//     document.write(`</div>`);
+// }
+// showInfo("Shimaa", 25 , 5000, "yes", "Html", "Css", "JS");
+// End Function Advanced Practiceo 
+
+// Start Fuction- Random Argument Challenge
+
+function showDetailes(a, b, c){
+    let userName, Age, Status;
+typeof a==="string"?userName=a:typeof b==="string"?userName=b:userName=c;
+typeof a==="number"?Age=a:typeof b=="number"?Age=b:Age=c;
+typeof a=="boolean"?Status=a:typeof b=="boolean"?Status=b:Status=c;
+    document.write(`<div>`);
+    document.write(`<p>`);
+    document.write(`Welcome,${userName}, `);
+    document.write(`Your Age Is${Age}, `);
+    Status===true?document.write(`You Are Availaple To Work${Status}`):document.write(`You Are not Availaple To Work${Status}`);
+    document.write(`</p>`);
+    document.write(`</div>`);
 }
- 
+showDetailes(25,"Shimaa",false);
