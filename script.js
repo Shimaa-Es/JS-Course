@@ -172,4 +172,19 @@
 // End Fuction- Random Argument Challenge
 
 //  Start Arrow Function Challenge
+// function names(...names){
+//         console.log(`Names [${names.join("],[")}] => Done!`);
+// };
+// names("Osama","Mohamed","Ali", "Ibrahim"); (1)
+
+// let names=(...names)=>console.log(`Names [${names.join("],[")}] => Done!`);
+// names("Osama","Mohamed","Ali", "Ibrahim","Shimaa"); (2)
+// let myNumbers = [20, 50, 10, 60];
+// let calc = (one, two, ...nums) => one+two+nums[0];
+// console.log(calc(10,myNumbers[0],myNumbers[1])) (3)
+// let myNumbers = [20, 50, 10, 60];
+// function calc(one, two, ...nums){
+//     console.log(one+two+nums[0]);
+// };
+// calc(10,myNumbers[0],myNumbers[1]); (4)
 //  End Arrow Function Challenge
